@@ -1,8 +1,13 @@
-# React + Vite
+# Coin Tracker Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This site will be listing the top 100 crypto currency in the market. It provides an overview of the crypto market such as current price, volume and market capitalisation. I will be building this project for fun using ReactJS and will be utilising 'CoinCap API 2.0' to retrieve available market datas for
 
-Currently, two official plugins are available:
+## Technology Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- ReactJS
+- SASS
+
+## Features
+
+- Responsive web design
+- Working with RESTful API
