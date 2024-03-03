@@ -1,35 +1,42 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import './App.css';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
+      <header>
+        <a href="/">
+          <img
+            src="src/assets/btc.svg"
+            alt="coin tracker brand logo hehe haha"
+          />
         </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
+        <nav>
+          <ul>
+            <li>
+              <a href="/">Cryptocurrencies</a>
+            </li>
+            <li>
+              <a href="">My Portfolio</a>
+              {/* If user not login, display please sign in notification etc */}
+            </li>
+          </ul>
+        </nav>
+        <button>Sign In</button>
+        <button>Sign Up</button>
+      </header>
+      <main>
+        {/* Search Features */}
+        {/* List of coins with pagination */}
+      </main>
+      <footer>
+        <p>CoinTracker @2024</p>
         <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
+          Credits due to <a href="https://docs.coincap.io">CoinCap API 2.0</a>{' '}
+          for making this RESTful API free and publicly available
         </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      </footer>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
